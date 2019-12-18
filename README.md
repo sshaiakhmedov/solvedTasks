@@ -271,7 +271,7 @@ function finalGrade (exam, projects) {
 ```
 
 Be Concise I - The Ternary Operator
-
+```javascript
 // TODO: Refactor and shorten the function
 function describeAge(a){
 let d="You're a(n) ";
@@ -279,10 +279,10 @@ return m=a<13?d+'kid':
 (a>12&&a<18)?d+'teenager':
 (a>17 &&a<65)?d+'adult':d+'elderly';
 }
-
+```
 
 101 Dalmatians - squash the bugs, not the dogs!
-
+```javascript
 function howManyDalmatians(number) {
   
   let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
@@ -292,15 +292,16 @@ function howManyDalmatians(number) {
   return respond
   
   }
-
+```
 Do I get a bonus?
 
+```javascript
 
 function bonusTime(salary, bonus) {
 let newSalary;
 newSalary=!!bonus ? salary*10 : salary
 return "\u00A3"+newSalary
 }
-
+```
 
 
