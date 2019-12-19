@@ -363,4 +363,64 @@ return "\u00A3"+newSalary
 }
 ```
 
+Switch it Up!
+```javascript
+function switchItUp(number){
+
+switch (number){
+case 0: return "Zero";
+break;
+case 1: return "One";
+break;
+case 2: return "Two";
+break;
+case 3: return "Three";
+break;
+case 4: return "Four";
+break;
+case 5: return "Five";
+break;
+case 6: return "Six";
+break;
+case 7: return "Seven";
+break;
+case 8: return "Eight";
+break;
+case 9: return "Nine";
+break;
+}
+}
+```
+
+simple calculator
+```javascript
+function calculator(a,b,sign){
+
+switch (sign){
+case '+': return a+b;
+break;
+case '-': return a-b;
+break;
+case '*': return a*b;
+break;
+case '/': return a/b;
+break;
+default: return "unknown value";
+}
+}
+```
+power of two
+```javascript
+function isPowerOfTwo(n){
+if (n===1) return true;
+while (n>1){
+n=n/2
+}
+if (n===1) {
+return true
+} else { 
+return false;
+}
+}
+```
 
