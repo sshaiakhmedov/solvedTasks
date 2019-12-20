@@ -424,3 +424,101 @@ return false;
 }
 ```
 
+Difference Of Squares
+```javascript
+function differenceOfSquares(n){
+let sum1=0;
+let sum2=0;
+  while (n>=1 && n<=100) {
+  for (let i=1; i<=n; i++){
+  sum1=sum1+i;
+  sum2=sum2+Math.pow(i,2);
+  }
+  return Math.pow(sum1,2)-sum2;
+  }
+}
+```
+
+No zeros for heros
+```javascript
+function noBoringZeros(n) {
+ if (n==0) {
+ return 0;
+}
+while (n%10==0){
+n/=10;
+}
+return n;
+}
+```
+
+Factorial
+```javascript
+function factorial(n){
+ let f=1;
+  for (let i=n; i>=1; i--){
+ 
+  f=f*i;
+}
+return f;
+}
+```
+
+Power of 3
+```javascript
+function largestPower(n){
+let k=0;
+while (Math.pow(3,k)<n){
+k++;
+}
+   return k-1
+}
+```
+
+The wheat/rice and chessboard problem
+```javascript
+function squaresNeeded(grains){
+  let square=0;
+  let x=1;
+  let s=0;
+  while (grains>s){
+  s+=x;
+  x*=2;
+  ++square;
+  }
+  return square;
+  }
+```
+
+Sum of the first nth term of Series
+```javascript
+function SeriesSum(n){
+if (n==1 || n==0){
+return n.toFixed(2);
+}
+let t=4;
+let c=1;
+for (let i=1; i<n;i++){
+c+=1/t;
+t+=3;
+}
+return c.toFixed(2);
+}
+```
+
+Grasshopper - Summation
+```javascript
+let summation = function (num) {
+let summ=0;
+ for (let i=1; i<=num; i++){
+summ+=i;
+ }
+ return summ;
+ }
+```
+
+
+
+
+
+
