@@ -517,6 +517,72 @@ summ+=i;
  }
 ```
 
+Sum of Multiples
+```javascript
+function sumMul(n,m){
+
+if (n==0 && m==0) {
+return 'INVALID'
+} else if (m<0 || n<0){
+return 'INVALID'
+}
+let summ=0;
+for (let i=n; i<m; i+=n){
+summ+=i;
+}
+return summ;
+}
+```
+
+Beginner Series #3 Sum of Numbers
+```javascript
+function getSum( a,b ){
+
+return ((Math.abs(a-b)+1)*(a+b))/2;
+}
+```
+
+Draw stairs
+```javascript
+function drawStairs(n) {
+let str="";
+  for (let i=1; i<=n; i++){
+  str+=i===n? "I" : "I\n" + ' '.repeat(i)
+  }
+return str;
+}
+```
+
+Power
+```javascript
+function numberToPower(number, power) {
+let pow=1;
+if (power==0){
+return pow;
+}
+
+let count=1;
+    do{
+   pow=pow*number;
+   count++;
+    } while (count<=power);
+    return pow;
+}
+```
+
+Filter the number
+```javascript
+var FilterString = function(value) {
+  let str='';
+  for (let i=0; i<value.length; i++){
+  if (isNaN(value[i])===false) {
+  str+=value[i];
+  }
+}
+return +str;
+}
+```
+
 
 
 
