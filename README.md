@@ -583,6 +583,88 @@ return +str;
 }
 ```
 
+isReallyNaN
+```javascript
+const isReallyNaN = (val) => {
+return val!=val
+}
+
+```
+Is integer safe to use? (1st solution)
+```javascript
+function SafeInteger(n) {
+if (n<=9007199254740991 && n>=-9007199254740991) {
+return true
+} else {
+return false
+}
+}
+```
+
+Is integer safe to use? (2nd solution)
+```javascript
+function SafeInteger(n) {
+return Number.isSafeInteger(n)
+}
+```
+Return Negative
+```javascript
+function makeNegative(num) {
+return  num>0 ? -num : 
+ num==0? 0: num;
+ 
+}
+```
+
+Opposite number
+```javascript
+function opposite(number) {
+let prod=1;
+  return produ=number>=0? number*-prod : -number;
+}
+
+```
+
+Invert values
+```javascript
+function invert(array) {  
+for (let i = 0; i < array.length; i++) {
+    array[i]=(-1)*array[i];
+    }
+    return array;
+    }
+```
+
+BASIC: Making Six Toast.
+```javascript
+function sixToast(num) {
+  return Math.abs(num-6)
+}
+```
+
+Closest elevator
+```javascript
+function elevator(left, right, call){
+  return Math.abs(call-left)<Math.abs(call-right)? "left":"right";
+ }
+```
+
+Square Every Digit
+```javascript
+function squareDigits(num){
+let k='';
+let c=num.toString();
+ for (let i=0; i<c.length; i++){
+k+=Math.pow(c[i],2);
+ }
+ return +k
+}
+```
+
+
+
+
+
 
 
 
