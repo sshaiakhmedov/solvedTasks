@@ -661,6 +661,120 @@ k+=Math.pow(c[i],2);
 }
 ```
 
+Squares sequence
+```javascript
+function squares(x, n) {
+
+let arr=new Array();
+if (n<=0) {
+return arr
+}
+arr[0]=x;
+for (let i=1;i<n; i++){
+
+arr[i]=Math.pow(arr[i-1],2);
+}
+return arr;
+}
+```
+
+To square(root) or not to square(root)
+```javascript
+function squareOrSquareRoot(array) {
+ for (let i=0; i<array.length; i++){
+array[i]=Number.isInteger(Math.sqrt(array[i]))? Math.sqrt(array[i]) : Math.pow(array[i],2);
+}
+return array
+}
+```
+
+You're a square!
+```javascript
+var isSquare = function(n){
+ return Number.isInteger(Math.sqrt(n))? true : false
+}
+```
+
+Find the next perfect square!
+```javascript
+function findNextSquare(sq) {
+return Number.isInteger(Math.sqrt(sq))? Math.pow((Math.sqrt(sq)+1),2) : -1
+}
+```
+
+Beginner Series #4 Cockroach
+```javascript
+function cockroachSpeed(s) {
+  return Math.floor(s*27.778);
+}
+```
+Price of Mangoes
+```javascript
+function mango(quantity, price){
+return (quantity-Math.floor(quantity/3))*price;
+}
+```
+
+Holiday VIII - Duty Free
+```javascript
+function dutyFree(normPrice, discount, hol){
+return Math.floor(hol/(normPrice*(discount/100)));
+}
+```
+How many times should I go?
+```javascript
+function howManyTimes(annualPrice, individualPrice) {
+return Math.ceil(annualPrice/individualPrice)
+}
+```
+
+Tortoise racing
+```javascript
+function race(v1, v2, g) {
+   if (v1>=v2) return null;
+   let t=g/(v2-v1);
+   let time=t*3600;
+   let hour=Math.trunc(time/3600);
+   let min=Math.trunc((time-hour*3600)/60);
+   let sec=Math.trunc(time-hour*3600-min*60);
+   return [hour, min, sec];
+}
+```
+Formatting decimal places #1
+```javascript
+function twoDecimalPlaces(number) {
+return (Math.trunc(number*100))/100
+}
+```
+Lario and Muigi Pipe Problem
+```javascript
+function pipeFix(numbers){
+let arr=new Array();
+for (let i=Math.min(...numbers); i<=Math.max(...numbers); i++){
+arr.push(i)
+}
+return arr
+}
+```
+Expressions Matter
+```javascript
+function expressionMatter(a, b, c) {
+let d=a+b*c, e=a*b+c, f=(a+b)*c, h=a*(b+c), k=a+b+c, t=a*b*c;
+let arr=[d,e,f,h,k,t];
+ return Math.max(...arr)
+}
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
