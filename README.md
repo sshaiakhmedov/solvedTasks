@@ -772,6 +772,76 @@ function toBinary(n){
 }
 ```
 
+Binary Addition
+```javascript
+function addBinary(a,b) {
+return (a+b).toString(2);
+}
+```
+Binary Addition (2nd solution)
+```javascript
+let addBinary=(a,b)=>(a+b).toString(2);
+```
+
+Calculate Price Excluding VAT
+```javascript
+//return price without vat
+function excludingVatPrice(price){
+ if (price===null){
+  return -1
+  } else if (price!==null){
+return Number((price/1.15).toFixed(2))
+ 
+  }
+}
+```
+
+Parse nice int from char problem
+```javascript
+function getAge (inputString){
+for (let i=1; i<=9; i++){
+return parseInt(inputString)
+}
+}
+```
+
+Parse nice int from char problem
+```javascript
+function getAge(inputString){
+return parseInt(inputString);
+}
+```
+
+Hex to Decimal
+```javascript
+function hexToDec(hexString){
+return Number.parseInt(hexString,16);
+}
+```
+
+Bin to Decimal
+```javascript
+function binToDec(bin){
+return parseInt(bin,2) 
+}
+```
+
+Parse float
+```javascript
+function parseF(s) {
+  if(Number.isNaN(parseFloat(s)))
+    return null;
+  else
+    return parseFloat(s); 
+}
+```
+
+Parse float (2nd solution with ternary operator)
+```javascript
+function parseF(s) {
+ return isNaN(parseFloat(s))? null : parseFloat(s);
+}
+```
 
 
 
