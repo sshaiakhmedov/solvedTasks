@@ -765,20 +765,14 @@ let arr=[d,e,f,h,k,t];
 }
 ```
 
-//Java->Maven 
-
-//<?xml version="1.0" encoding="UTF-8"?>
-//<project xmlns="http://maven.apache.org/POM/4.0.0"
-//         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-//         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-//    <modelVersion>4.0.0</modelVersion>
-
-//    <groupId>df</groupId>
-//    <artifactId>df</artifactId>
-//    <version>1.0-SNAPSHOT</version>
+Convert to Binary
+```javascript
+function toBinary(n){
+  return Number(n.toString(2));
+}
+```
 
 
-</project>
 
 
 
