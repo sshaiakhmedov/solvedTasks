@@ -843,6 +843,174 @@ function parseF(s) {
 }
 ```
 
+Sum Arrays
+```javascript
+function sum (numbers) {
+let summ=0;
+if (numbers.length==0) {
+return 0
+};
+for (let i=0; i<numbers.length; i++){
+summ+=numbers[i];
+}
+   return summ; 
+}
+```
+Count the Monkeys!
+```javascript
+function monkeyCount(n) {
+let arr=[];
+for (let i=0;i<n;i++){
+arr[i]=i+1;
+}
+return arr;
+}
+```
+
+Filling an array (part 1)
+```javascript
+function arr (N){
+let arr2=[];
+for (let i=0;i<N;i++){
+arr2[i]=i;
+}
+return arr2
+}
+```
+Filling an array (part 1) / 2nd solution with array.push() method
+```javascript
+function arr (N){
+let arr=[];
+for (let k=0;k<N;k++){
+arr.push(k);
+}
+return arr;
+}
+```
+What is type of variable?
+```javascript
+function type(value) {
+return ({}.toString.call(value)).slice(8,-1).toLowerCase();
+
+}
+```
+
+Is every value in the array an array?
+```javascript
+function arrCheck (value){
+if (value.length==0) return true; 
+let count=0;
+for (let i=0; i<value.length; i++){
+Array.isArray(value[i])==true? count=count+1 : count=count
+}
+if (count==value.length){
+return true
+} else {
+return false
+}
+}
+```
+
+Enumerable Magic #3 - Does My List Include This?
+```javascript
+function include(arr, item){
+let k=0;
+  for (let i=0;i<arr.length; i++){
+ if (arr[i]===item){
+ k=1;
+ break;
+}
+}
+return k==1? true: false;
+}
+```
+Enumerable Magic #3 - Does My List Include This? // solution 2
+```javascript
+function include(arr, item){
+  return arr.includes(item);
+}
+```
+
+Counting sheep...
+```javascript
+function countSheeps(arrayOfSheep) {
+let count=0;
+for (let i=0; i<arrayOfSheep.length; i++){
+ if (arrayOfSheep[i]==true){
+ count++
+}
+}
+return count;
+}
+```
+
+A Needle in the Haystack
+```javascript
+function findNeedle(haystack) {
+  // your code here
+  let index;
+  for (let i = 0; i < haystack.length; i++) {
+    if(haystack[i] == 'needle') {
+      index = i;
+      break;
+    }
+  }
+  return 'found the needle at position ' + index
+}
+```
+A Needle in the Haystack // 2nd solution
+```javascript
+function findNeedle(haystack) {
+return "found the needle at position "+haystack.indexOf("needle");
+}
+```
+
+Difference of Volumes of Cuboids
+```javascript
+function findDifference(a, b) {
+  return Math.abs(a[0]*a[1]*a[2]-b[0]*b[1]*b[2]);
+}
+```
+
+Total amount of points
+```javascript
+function points(games) {
+let score=0;
+let x;
+let y;
+
+for (let i=0;i<games.length; i++){
+x=games[i].slice(0,-2);
+y=games[i].slice(2);
+x>y? score+=3:
+x<y? score=score-0:score=score+1;
+}
+return score;
+}
+```
+
+Find the first non-consecutive number
+```javascript
+function firstNonConsecutive (arr) {
+let k=0;
+let index;
+for (let i=0;i<arr.length; i++){
+if (arr[i+1]-arr[i]>1) {
+index=arr[i+1]
+} else if (arr[i+1]-arr[i]==1) {
+k++
+}
+}
+return k==arr.length-1? null: index;
+}
+```
+
+
+
+
+
+
+
 
 
 
