@@ -1005,6 +1005,118 @@ return k==arr.length-1? null: index;
 }
 ```
 
+1. Square(n) Sum
+```javascript
+function squareSum(numbers){
+let sum=0;
+  for (let i=0;i<numbers.length; i++){
+    sum+=Math.pow(numbers[i],2);
+}
+return sum;
+}
+```
+
+2. How good are you really?
+```javascript
+function betterThanAverage(classPoints, yourPoints) {
+classPoints.push(yourPoints);
+let aver=0;
+  for (let i=0; i<classPoints.length; i++){
+    aver+=classPoints[i];
+  }
+return aver/classPoints.length<yourPoints? true : false
+}
+```
+
+3. Sum of positive
+
+```javascript
+function positiveSum(arr) {
+let sum=0;
+    for (let i=0;i<arr.length; i++){
+    if (arr[i]>0) {
+    sum+=arr[i];
+    }
+  }
+return sum;
+}
+```
+
+4. Calculate average
+```javascript
+function find_average(array) {
+  // sum array divided by array length
+  let sum = 0;
+  for(let i = 0; i < array.length; i++){
+    sum += array[i];
+  }
+  return sum/array.length;
+}
+```
+
+5. Divide and Conquer
+```javascript
+function divCon(x){
+let strInt=0;
+let int=0;
+  for (let i=0; i<x.length; i++){
+  typeof x[i]=='string'? strInt+=+x[i] : int+=x[i];
+  }
+  return int-strInt;
+}
+```
+
+6. Sum of Odd Cubed Numbers
+```javascript
+function cubeOdd(arr) {
+let oddCubed=0;
+  for (let i=0; i<arr.length; i++){
+  if (!Number.isInteger(arr[i])){
+  return undefined
+  }
+  Math.abs(arr[i]%2)===1? oddCubed+=Math.pow(arr[i],3) : oddCubed=oddCubed;
+  }
+return oddCubed;
+}
+```
+
+7. Odd or Even?
+```javascript
+function oddOrEven(array) {
+let sum=0;
+  for (let i=0; i<array.length; i++){
+  sum+=array[i];
+  }
+  return sum%2==0? 'even' : 'odd';
+}
+```
+
+8. Find the smallest integer in the array
+```javascript
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+```
+
+9. Remove the minimum
+```javascript
+function removeSmallest(numbers) {
+let k=numbers.indexOf(Math.min(...numbers));
+let arr=new Array();
+  for (let i=0; i<numbers.length; i++){
+  if (i!=k) {
+    arr.push(numbers[i]);
+    }
+  }
+return arr;
+}
+```
+
+10. 
+
+
 
 
 
