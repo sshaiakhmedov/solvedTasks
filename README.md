@@ -1114,7 +1114,201 @@ return arr;
 }
 ```
 
-10. 
+* 28-Dec
+1. Sum without highest and lowest number
+```javascript
+function sumArray (array) {
+  if (array==undefined || array==null){
+  return 0;
+  } else if (!array[2]){
+  return 0;
+  }
+    let min=array.indexOf(Math.min(...array));
+    let max=array.indexOf(Math.max(...array));
+    let sum=0;
+    for (let i=0; i<array.length; i++){
+    sum+=array[i]
+    }
+  
+return sum-array[min]-array[max];
+}
+```
+
+2. Find Maximum and Minimum Values of a List
+```javascript
+let min = function (list){
+    
+    return Math.min(...list);
+}
+
+let max = function (list){
+    
+    return Math.max(...list);
+}
+```
+
+3. Reversed sequence
+```javascript
+const reverseSeq = n => {
+let arr=new Array ();
+  for (let i=n; i>=1; i--){
+  arr.push(i)
+  }
+return arr;
+}
+```
+
+4. Unfinished Loop - Bug Fixing #1
+```javascript
+function createArray(number){
+  var newArray = [];
+  
+  for (let counter = 1; counter <= number; counter++){
+    newArray.push(counter);
+  }
+  
+  return newArray;
+}
+```
+
+5. Training JS #10: loop statement --for
+```javascript
+function pickIt(arr){
+  var odd=[],even=[];
+  
+  for (let i=0;i<arr.length; i++){
+    if (arr[i]%2==0){
+    even.push(arr[i])
+    } else {
+    odd.push(arr[i]);
+    }
+  }
+  
+  return [odd,even];
+}
+```
+
+6. Pre-FizzBuzz Workout #1
+```javascript
+function preFizz(n) {
+//n>=1
+let arr=[]; //or let arr=new Array();
+let i=1;
+  while (i<=n){
+  arr.push(i);
+  i++
+  }
+  return arr;
+}
+```
+
+7. Count by X
+```javascript
+function countBy(x, n) {
+let arr=[];
+  for (let i=1; i<=n; i++){
+  arr.push(i*x);
+  }
+return arr;
+}
+```
+
+8. Powers of 2
+```javascript
+function powersOfTwo(n){
+//n>0
+/*Math.pow(n,0...n)*/
+let arr=new Array();
+  for (let i=0;i<=n; i++){
+  arr.push(Math.pow(2,i));
+  }
+return arr;
+}
+```
+
+9. Find the divisors!
+```javascript
+function divisors(integer) {
+//exclude 1 and integer in array
+
+  if (integer%2!=0 && integer%3!=0 && integer%5!=0 && integer%11!=0 || integer==3 ) {
+  return `${integer} is prime`;
+  }
+  
+  let arr=[]; //2nd: let arr=new Array();
+  for (let i=2; i<integer; i++){
+    if (integer%i==0 && i<=integer){
+    arr.push(i);
+   }
+  }
+return arr;
+}
+```
+
+10. Training JS #4: Basic data types--Array
+```javascript
+function getLength(arr){
+  return arr.length;
+}
+
+function getFirst(arr){
+  return arr[0];
+}
+
+function getLast(arr){
+  //return the last element of arr
+  return arr[arr.length-1];
+}
+
+function pushElement(arr){
+  var el=1;
+  arr.push(el);
+  //push el to arr
+  return arr
+}
+
+function popElement(arr){
+  //pop an element from arr
+ arr.pop(); 
+```
+
+11. o Loops 2 - You only need one
+```javascript
+function check(a,x){
+return a.includes(x)? true : false;
+}
+```
+11. o Loops 2 - You only need one // 2nd solution
+```javascript
+let check =(a,x)=> a.includes(x);
+```
+
+12. You only need one - Beginner
+```javascript
+let check=(a, x)=> a.includes(x);
+```
+
+13. Be Concise IV - Index of an element in an array
+```javascript
+let find=(array,element)=>{return array.includes(element)?array.indexOf(element):"Not found"}
+```
+
+14. A wolf in sheep's clothing
+```javascript
+function warnTheSheep(queue) {
+  
+  return queue.indexOf("wolf")===queue.length-1? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${queue.length-queue.indexOf("wolf")-1}! You are about to be eaten by a wolf!`
+}
+```
+14. A wolf in sheep's clothing // 2nd method
+```javascript
+function warnTheSheep(queue) {
+let position=queue.reverse().indexOf("wolf");
+return position===0? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${position}! You are about to be eaten by a wolf!`
+}
+```
+
+15.  
 
 
 
