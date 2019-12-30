@@ -1308,9 +1308,74 @@ return position===0? "Pls go away and stop eating my sheep" : `Oi! Sheep number 
 }
 ```
 
-15.  
+#29-Dec
 
+1. JavaScript Array Filter
+```javascript
+let getEvenNumbers =(numbersArray)=>numbersArray.filter(el=>el%2===0);
+```
 
+2. Find numbers which are divisible by given number
+```javascript
+let divisibleBy=(numbers, divisor)=> numbers.filter(el=>el%divisor===0);
+```
+
+3. Removing Elements
+```javascript
+function removeEveryOther(arr){
+  return arr.filter((el,ind)=>ind%2===0)
+}
+```
+
+4. filterEvenLengthWords
+```javascript
+let filterEvenLengthWords=words=> words.filter(el=> el.length%2===0);
+```
+
+5. Find how many times did a team from a given country win the Champions League?
+```javascript
+let countWins=(winnerList, country)=> (winnerList.filter(el=>el.country==country)).length;
+```
+
+6.  Well of Ideas - Easy Version /1st solution
+```javascript
+function well(x){
+if (x.includes('bad') && !x.includes('good') || !x.includes('bad') && !x.includes('good')) return "Fail!";
+let k=0;
+    for (let i=0; i<x.length; i++){
+     
+     x[i].includes('good')? k++ : k=k;
+      }
+    if (k>2) {
+    return 'I smell a series!'
+    } else {
+    return "Publish!"
+    }
+}
+```
+6. Well of Ideas - Easy Version  / 2nd soulution with array.filter
+```javascript
+function well(x){
+let countGood=x.filter(el=>el=='good').length;
+return countGood<1? 'Fail!':
+      countGood<3?  'Publish!': 'I smell a series!';
+}
+```
+7. Array.diff
+```javascript
+function array_diff(a, b) {
+ return a.filter(el=>!b.includes(el));
+}
+```
+
+8. Find Duplicates
+```javascript
+function duplicates(arr) {
+return arr.filter((el,ind)=> ind==arr.indexOf(el) && ind!=arr.lastIndexOf(el));
+}
+```
+
+9. 
 
 
 
