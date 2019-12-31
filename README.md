@@ -1375,7 +1375,125 @@ return arr.filter((el,ind)=> ind==arr.indexOf(el) && ind!=arr.lastIndexOf(el));
 }
 ```
 
-9. 
+30-Dec-19
+
+1. Train to remove duplicates from an array with filter()
+```javascript
+let unique=arr=> arr.filter((el,i)=>i==arr.indexOf(el));
+```
+2. Santa's Naughty List
+```javascript
+function findChildren(santasList, children) {
+return santasList.filter((name, ind)=> children.includes(name) && ind==santasList.indexOf(name)).sort();
+}
+```
+
+3. Convert number to reversed array of digits
+```javascript
+function digitize(n) {
+let arr= n.toString().split("").reverse();
+for (let i=0; i<arr.length; i++){
+  arr[i]*=1;
+  }
+  return arr
+}
+```
+
+4. My head is at the wrong end!
+```javascript
+function fixTheMeerkat(arr) {
+ return arr.reverse();
+}
+```
+
+5. Two Oldest Ages
+```javascript
+function twoOldestAges(ages){
+let arr2=ages.sort((a,b)=>a-b);
+return arr2.filter((el,ind)=>ind>=arr2.length-2);
+}
+```
+
+6. Sum of two lowest positive integers
+```javascript
+function sumTwoSmallestNumbers(numbers) {  
+let arr=numbers.sort((a,b)=>a-b);
+return arr[0]+arr[1];
+}
+```
+
+7. Sentence Smash
+```javascript
+function smash (words) {
+return words.join(' ');
+};
+```
+
+8. String Templates - Bug Fixing #5
+```javascript
+let buildString=(...array)=>"I like "+ array.join(', ') +"!";
+```
+
+9. Printing Array elements with Comma delimiters
+```javascript
+function printArray(array){
+  return array.join();
+}
+```
+
+10. CSV representation of array
+```javascript
+function toCsvText(array) {
+  return array.join('\n');
+}
+```
+
+11. Enumerable Magic #1 - True for All?
+```javascript
+function all( arr, fun ){
+  return arr.every(fun) ? true : false;
+}
+```
+
+12. Grasshopper - Array Mean
+```javascript
+let findAverage = nums=> nums.reduce((acc,curr)=>acc+curr)/nums.length;
+```
+
+13. Beginner - Reduce but Grow
+```javascript
+function grow(x){
+return x.reduce((acc,curr)=>acc*curr,1);
+}
+```
+
+14. Array plus array
+```javascript
+function arrayPlusArray(arr1, arr2) {
+  return arr1.reduce((acc,el)=>acc+el,0) + arr2.reduce((acc,el)=>acc+el); //something went wrong
+}
+```
+
+15. SpeedCode #2 - Array Madness
+```javascript
+function arrayMadness (a, b) {
+return a.reduce((acc, curr) => acc + curr**2, 0) > b.reduce((acc, curr) => acc+ curr**3, 0)? true : false;
+}
+```
+
+16. Beginner - Lost Without a Map
+```javascript
+function maps(x){
+return x.map(el=>el*2);
+}
+```
+
+17. Enumerable Magic #25 - Take the First N Elements
+```javascript
+function take(arr, n) {
+  return arr.splice(0,n);
+}
+``` 
 
 
 
