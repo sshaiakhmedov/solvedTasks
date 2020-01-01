@@ -1495,6 +1495,16 @@ function take(arr, n) {
 }
 ``` 
 
+31-dec
+
+1. Remove First and Last Character Part Two / in progress
+```javascript
+function array(str){
+let str1=str.slice(2,-2);
+return str1.length===0 || str1.length===2? null : str1
+}
+``` 
+
 
 
 
