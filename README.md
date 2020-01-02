@@ -1500,20 +1500,87 @@ function take(arr, n) {
 1. Remove First and Last Character Part Two / in progress
 ```javascript
 function array(str){
-let str1=str.slice(2,-2);
-return str1.length===0 || str1.length===2? null : str1
+let str1=str.split(',').slice(1,-1).join(' ');
+return str1.length>0? str1 : null;
 }
 ``` 
 
+# 01-JAn-2020
 
+1. Jenny's secret message
+```javascript
+function greet(name){
+  
+  if (name === "Johnny"){
+    return "Hello, my love!";
+    } else {
+   return  "Hello, " + name + "!"
+    }
+}
+```
 
+2. Template Strings
+```javascript
+var TempleStrings = function(obj, feature) {
+  return obj+" are "+feature;
+}
+```
 
+3. Returning Strings
+```javascript
+function greet(name){
+return `Hello, ${name} how are you doing today?`
+}
+```
 
+4. Grasshopper - Combine strings
+```javascript
+function combineNames(a,b){
+return `${a} ${b}`;
+}
+```
 
+5. If you can't sleep, just count sheep!!
+```javascript
+var countSheep = function (num){
+let str='';
+  for (let i=1;i<=num;i++){
+  str+=`${i} sheep...`;
+  }
+  return str;
+}
+```
 
+6. Grasshopper - Debug sayHello
+```javascript
+function sayHello (name) {
+return "Hello, "+name;
+}
+```
 
+7. get character from ASCII Value
+```javascript
+function getChar(c){
+return String.fromCodePoint(c);
+}
+```
 
+8. Regex validate PIN code
+```javascript
+function validatePIN (pin) {
+ return Number.isInteger(+pin) && !pin.includes('e') && pin.length===4 && !pin.includes('\n') && !pin.includes('+') && !pin.includes('-') && !pin.includes(' ') && !pin.includes('.')  || +pin==0000 && pin.length==4 || +pin==000000 && pin.length==6 || Number.isInteger(+pin) && pin.length===6 && !pin.includes('-') && !pin.includes(' ','') && !pin.includes('+') && !pin.includes('.') && !pin.includes(' ') && !pin.includes('\n')  ? true : false;
+ }
 
+```
+
+9. Is this my tail?
+```javascript
+function correctTail (body, tail) {
+return body.charAt(body.length-1)==tail
+}
+```
+
+10. 
 
 
 
