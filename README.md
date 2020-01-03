@@ -1580,9 +1580,44 @@ return body.charAt(body.length-1)==tail
 }
 ```
 
-10. 
+#02-Jan-2019
 
+1. 5 without numbers !!
+```javascript
+function unusualFive() {
+return ['s','s','s','s','s'].length
+}
+```
+2. Numbers to Letters
+```javascript
+function switcher(x){
+  const alp = "0zyxwvutsrqponmlkjihgfedcba!? ";
+  return x.map((el, i) => el = alp[el]).join('');
+}
+```
+Solution 2:
+```javascript
+function switcher(x){
+  let letters = "0zyxwvutsrqponmlkjihgfedcba!? ";
+  const arr = [];
+  for (let i = 0; i < x.length; i++) {
+    arr.push(letters[x[i]]);
+  }
+  return arr.join('');
+}
+```
+3. Abbreviate a Two Word Name
+```javascript
+function abbrevName (name){
 
+let arr=name.split(' ');
+
+let initials=`${arr[0].charAt(0)}.${arr[1].charAt(0)}`;
+return initials.toUpperCase();
+}
+```
+
+4. 
 
 
 
