@@ -1617,16 +1617,190 @@ return initials.toUpperCase();
 }
 ```
 
-4. 
+# 03-Jan
 
+1. Regex count lowercase letters
+```javascript
+function lowercaseCount(str){
+let count=0;
+   for (let i=0;i<str.length; i++){
+   if (str[i]!=str[i].toUpperCase()){
+   count+=1;
+   }
+  }
+   return count
+}
+```
 
+2. Double Char
+```javascript
+function doubleChar(str) {
+ let arr=str.split('');
 
+ return arr.map(el=>el+el).join('');
+}
+```
 
+3. Remove First and Last Character
+```javascript
+function removeChar(str){
+ 
+let arr=str.split('');
+arr.pop();
+arr.shift();
+return arr.join('');
+};
 
+```
 
+4. Triple Trouble
+```javascript
+function tripleTrouble(one, two, three){
+let arr=[];
+  for (let i=0;i<one.length; i++){
+  arr.push(one[i]);
+  arr.push(two[i]);
+  arr.push(three[i]);
+  }
+  return arr.join('');
+ }
+```
 
+5. Remove String Spaces
+```javascript
+function noSpace(x){
+let arr= x.split('');
+let arr2=[];
 
+for (let i=0; i<arr.length; i++) {
+ arr[i]!=" "?  arr2.push(arr[i]) : arr2=arr2;
+  }
+return arr2.join('');
+}
+```
 
+6. Spacify
+```javascript
+function spacify(str) {
+ return str.split('').join(' ');
+}
+```
 
+7. Unique In Order
+```javascript
+var uniqueInOrder=function(iterable){
+let arr2=[];
+  if (Array.isArray(iterable)){
+   for (let i=0;i<iterable.length; i++){
+  if (iterable[i+1]!=iterable[i]){
+    arr2.push(iterable[i])
+      }
+    }
+  return arr2;
+  } else {
+let arr1=iterable.split('');
 
+for (let i=0;i<arr1.length; i++){
+  if (arr1[i+1]!=arr1[i]){
+    arr2.push(arr1[i])
+    }
+  }
+}
+return arr2;
+}
+```
+
+7. Unique In Order / 2nd solution
+```javascript
+var uniqueInOrder=function(iterable){
+ let arr=[];
+ for (let i=0; i<iterable.length; i++){
+ if (iterable[i+1]!=iterable[i]){
+ arr.push(iterable[i])
+}
+}
+return arr
+}
+```
+
+8. Reversed Strings
+```javascript
+function solution(str){
+  let arr=str.split('');
+  return arr.reverse().join('');
+}
+```
+
+9. Is it a palindrome?
+```javascript
+function isPalindrome(x) {
+  return x.toUpperCase()==x.toUpperCase().split('').reverse().join('')
+}
+```
+
+10. The Wide-Mouthed frog!
+```javascript
+function mouthSize(animal) {
+ return animal.toLowerCase()=='alligator'? 'small' : "wide"
+}
+```
+
+11. Find the capitals
+```javascript
+var capitals = function (word) {
+	let arr=[];
+  for (let i=0;i<word.length; i++){
+    if (word[i]==word[i].toUpperCase()){
+    arr.push(i)
+    }
+  }
+return arr;
+};
+```
+
+12. Capitalization and Mutability
+```javascript
+function capitalizeWord(word) {
+let arr=word.split('');
+arr[0]=arr[0].toUpperCase();
+return arr.join('');
+}
+```
+
+13. MakeUpperCase
+```javascript
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
+```
+
+14. Thinking & Testing : Something capitalized
+```javascript
+function testit(s){
+let arr=s.split('');
+
+  for (let i=0; i<arr.length; i++){
+    if (arr[i+1]==' ' || arr[i+1]==undefined){
+    arr[i]=arr[i].toUpperCase();
+    }
+  }
+return arr.join('');
+}
+```
+
+15. Mumbling
+```javascript
+function accum(s) {
+s.split('');
+const arr=[];
+  for (let i=0;i<s.length; i++){
+  let x=s[i].toUpperCase();
+    for (let k=0; k<i; k++){
+    x+=s[i].toLowerCase();
+    }
+    arr.push(x);
+  }
+  return arr.join('-'); 
+}
+```
 
