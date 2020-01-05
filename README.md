@@ -1804,3 +1804,57 @@ const arr=[];
 }
 ```
 
+#01-04-2020
+
+1. repeatIt
+```javascript
+var repeatIt = function(str, n) {
+return typeof str=='string'? str.repeat(n) : 'Not a string';
+  }
+```
+
+2. String repeat
+```javascript
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+```
+
+3. Do you speak "English"?
+```javascript
+function spEng(sentence){
+let c='English'
+return sentence.toUpperCase().includes(c.toUpperCase());
+}
+```
+
+4. Don't give me five!
+```javascript
+function dontGiveMeFive(start, end) {
+let count=0;
+  for (let i=start; i<=end; i++){
+  !String(i).includes(5)? count++ : count
+  }
+return count
+}
+```
+
+5. Find the position!
+```javascript
+function position(letter){
+let alph=' abcdefghijklmnopqrstuvwxyz';
+return `Position of alphabet: ${alph.indexOf(letter)}`;
+}
+```
+
+6. validate code with simple regex
+```javascript
+function validateCode (code) {
+  if (String(code).startsWith(1) || String(code).startsWith(2) || String(code).startsWith(3)){
+    return true
+    } else {
+   return false
+  }
+}
+```
+
