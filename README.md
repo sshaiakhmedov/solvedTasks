@@ -1858,3 +1858,178 @@ function validateCode (code) {
 }
 ```
 
+7. String ends with?
+```javascript
+function solution(str, ending){
+  return str.endsWith(ending);
+}
+```
+#05-Jan-2020
+
+1. Credit Card Mask
+```javascript
+// return masked string
+function maskify(cc) {
+if (cc.length<=4){
+return cc
+}
+let a=cc.slice(cc.length-4);
+let b=cc.slice(0,-4);
+let c='';
+  for (let i=1;i<=b.length;i++){
+  c+='#'
+  }
+  return c+a;
+}
+```
+
+2. Tail Swap
+```javascript
+function tailSwap(arr) {
+let a1=arr[0].lastIndexOf(':');
+let b2=arr[1].lastIndexOf(':');
+let a=arr[0].slice(a1);
+let b=arr[1].slice(b2);
+
+let arr2=[];
+arr2[0]=arr[0].slice(0,a1)+b;
+arr2[1]=arr[1].slice(0,b2)+a;
+  return arr2;
+}
+```
+
+3. Vowel remover
+```javascript
+function shortcut (string) {
+let vowel='aeiouy';
+return string.replace(/[a,e,i,o,u]/gi,'');
+}
+```
+2nd solution
+```javascript
+function shortcut(string){
+return string.replace(/[aeiou]/ig,'');
+}
+```
+
+4. DNA to RNA Conversion
+```javascript
+function DNAtoRNA(dna) {
+return dna.replace(/[T]/g, 'U');
+}
+```
+2nd solution without []
+```javascript
+function DNAtoRNA(dna) {
+return dna.replace(/T/g, 'U');
+}
+```
+
+5. Get number from string
+```javascript
+function getNumberFromString(s) {
+  return +s.replace(/\D/g,'');
+}
+``` 
+
+6. Fake Binary
+```javascript
+function fakeBin(x){
+return x.replace(/[1,2,3,4]/g,'0').replace(/[5-9]/g,'1');
+}
+```
+
+7. Correct the mistakes of the character recognition software
+```javascript
+function correct(string){
+return string.replace(/5/g,'S').replace(/0/g,'O').replace(/1/g,'I');
+}
+```
+
+8. IXME: Replace all dots
+```javascript
+var replaceDots = function(str) {
+  return str.replace(/[.]/g, '-');
+}
+```
+
+9. Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+```javascript
+function remove(s){
+return s.replace(/!+$/g,'')
+}
+
+```
+
+10. Reversed Words
+```javascript
+function reverseWords(str){
+ return str.split(' ').reverse().join(' ')
+}
+```
+
+11. Descending Order
+```javascript
+function descendingOrder(n){
+  n=String(n);
+  let k=n.split('').sort((a,b)=>b-a).join('');
+  return k*1
+}
+```
+
+12. Highest and Lowest
+```javascript
+function highAndLow(numbers){
+  let arr=numbers.split(' ');
+  let arr2=arr.sort((a,b)=>b-a);
+  return `${arr2[0]} ${arr2[arr2.length-1]}`;
+}
+```
+
+13. Squash the bugs
+```javascript
+function findLongest(str) {
+  
+  let spl = str.split(' ');
+  let longest = 0;
+  
+    for (let i = 0; i<spl.length; i++) {
+      if (spl[i].length > longest) {
+      longest = spl[i].length
+      }
+    }
+  return longest
+}
+```
+
+14. Reversing Words in a String
+```javascript
+function reverse(string){
+  let arr=string.split(' ');
+  return arr.reverse().join(' ')
+}
+```
+
+15. Convert a string to an array
+```javascript
+function stringToArray(string){
+return string.split(/\s{1,}/);
+}
+```
+
+16. Can Santa save Christmas?
+```javascript
+function determineTime(durations){
+let arr=durations.join().replace(/,/g,':').split(':');
+let hr=0, min=0, sec=0;
+  for (let i=0, j=1, k=2; i<arr.length, j<arr.length, k<arr.length; i+=3, j+=3, k+=3){
+  hr+=+arr[i];
+  min+=+arr[j];
+  sec+=+arr[k];
+  } 
+  let sum=hr+min/60+sec/60;
+return sum<=24? true : false;
+}
+```
+
+17. 
