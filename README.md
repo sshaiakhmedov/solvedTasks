@@ -2032,4 +2032,24 @@ return sum<=24? true : false;
 }
 ```
 
-17. 
+#06-Jan-2020
+
+1. Every possible sum of two digits
+```javascript
+function digits(num){
+let arr=String(num).split('');
+let arr2=[];
+
+  for (let i=0, j=1; i<arr.length, j<arr.length; i++, j++){
+ 
+    for (let k=j; k<arr.length; k++){
+    arr2.push(+arr[i]+(+arr[k]));
+    
+    }
+    
+  }
+return arr2
+}
+```
+
+2. 
