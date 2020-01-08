@@ -2052,4 +2052,64 @@ return arr2
 }
 ```
 
-2. 
+#07-Jan-2020
+
+1. Welcome!
+```javascript
+function greet(language) {
+let langDb={
+english: 'Welcome',
+czech: 'Vitejte',
+danish: 'Velkomst',
+dutch: 'Welkom',
+estonian: 'Tere tulemast',
+finnish: 'Tervetuloa',
+flemish: 'Welgekomen',
+french: 'Bienvenue',
+german: 'Willkommen',
+irish: 'Failte',
+italian: 'Benvenuto',
+latvian: 'Gaidits',
+lithuanian: 'Laukiamas',
+polish: 'Witamy',
+spanish: 'Bienvenido',
+swedish: 'Valkommen',
+welsh: 'Croeso'
+};
+return ([language] in langDb)? langDb[language] :langDb.english;
+}
+```
+
+2. Duck Duck Goose
+```javascript
+function duckDuckGoose(players, goose) {
+  return players[(goose - 1) % players.length].name;
+}
+```
+
+3. What is between?
+```javascript
+function between(a, b) {
+let arr=[];
+for (let i=a;i<=b; i++){
+arr.push(i);// your code here
+}
+return arr
+}
+```
+
+4. Sum Mixed Array
+```javascript
+function sumMix(x){
+return x.reduce((acc,cur)=>+acc+Number(cur));
+}
+```
+
+5. Sort and Star
+```javascript
+function twoSort(s) {
+return s.sort()[0].split('').join('***');
+}
+```
+
+6. 
