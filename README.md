@@ -2112,4 +2112,67 @@ return s.sort()[0].split('').join('***');
 }
 ```
 
-6. 
+# 08-Jan-2020
+
+1. makeBackronym
+```javascript
+//preload variable: dict
+
+let makeBackronym = function(string){
+let arr=string.split('');
+let arrNew=[];
+  for (let i=0;i<arr.length; i++){
+  arrNew.push(dict[arr[i].toUpperCase()])
+  }
+return arrNew.join(' ')
+};
+```
+
+2. Make a function that does arithmetic!
+```javascript
+function arithmetic(a, b, operator){
+  let obj={
+    add: a+b,
+    subtract: a-b,
+    multiply: a*b,
+    divide: a/b, 
+  }
+ return obj[operator]  
+}
+```
+
+3. Check three and two
+```javascript
+function checkThreeAndTwo(array) {
+let aC=0, bC=0, cC=0;
+  for (let i=0; i<array.length; i++){
+  array[i]=="a"? aC++:
+  array[i]=="b"? bC++: cC++;
+  }
+return aC==2 && bC==3 || aC==3 && bC==2 || aC==2 && cC==3 || aC==3 && cC==2 || bC==2 && cC==3 || bC==3 && cC==2? true : false
+}
+```
+
+4. Job Matching #1
+```javascript
+function match(candidate, job) {
+  if (!!job.maxSalary && !!candidate.minSalary){
+    return job.maxSalary + candidate.minSalary * 0.1 >= candidate.minSalary;
+  } else {
+    throw 'Error';
+  }
+}
+```
+
+5. Multiple of index
+```javascript
+function multipleOfIndex (array) {
+  let arr=[];
+  for (let i=0; i<array.length; i++){
+    if (array[i]%i==0) {
+    arr.push(array[i]);
+    }
+  }
+  return arr;
+}
+```
