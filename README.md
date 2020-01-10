@@ -2176,3 +2176,13 @@ function multipleOfIndex (array) {
   return arr;
 }
 ```
+
+#09-Jan-2020
+
+1. Add property to every object in array
+```javascript
+ 
+questions.forEach(el => el.usersAnswer = null);
+```
+
+2. 
