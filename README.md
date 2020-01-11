@@ -2185,4 +2185,36 @@ function multipleOfIndex (array) {
 questions.forEach(el => el.usersAnswer = null);
 ```
 
-2. 
+#10-Jan=2020
+
+1. Numbers to Objects
+```javascript
+function numObj(s){
+let arr=[];
+
+  for (let i=0; i<s.length; i++) {
+    arr[i]={};
+  arr[i][s[i]]=String.fromCharCode(s[i]);
+  }
+  return arr;
+}
+```
+
+2. Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+```javascript
+function countLanguages (list){
+  const arr = [];
+  let obj = {};
+  for (i = 0; i < list.length; i++){
+    arr.push(list[i]['language'] )
+  }
+  for (i = 0; i < arr.length; i++){
+    if (obj.hasOwnProperty(arr[i]) ) {
+      obj[arr[i]]++;
+    } else {
+      obj[arr[i]] = 1;
+    }
+  }
+  return obj;
+}
+```
