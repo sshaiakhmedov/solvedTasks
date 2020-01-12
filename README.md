@@ -2218,3 +2218,115 @@ function countLanguages (list){
   return obj;
 }
 ```
+
+# 1-Jan-2020
+
+1. Most valuable character
+```javascript
+function solve(st) {
+  const obj = {}, ordered = {};
+  for (let el of st){
+    if (!obj.hasOwnProperty(el)) obj[el] = st.lastIndexOf(el) - st.indexOf(el);
+  }
+  let max = Math.max(...Object.values(obj));
+  Object.keys(obj).sort().forEach(key => ordered[key] = obj[key]);
+  for (let key in ordered){
+    if(ordered[key] === max) return key;
+  }
+}
+```
+
+2.  What is my name score? #1
+```javascript
+function nameScore(name){
+let arrName=name.toUpperCase().split(''); //new Array of name
+
+let arr=[];
+arr=Object.keys(alpha).join('').split(''); // newa array of alphabet letters
+
+let tr=0;
+for (let el in arrName){
+  for (let key in alpha){
+  if (key.includes(arrName[el])) 
+    tr+=alpha[key]
+  }
+}
+let ob={};
+ob[name]=tr;
+return ob
+}
+```
+
+3. The Office I - Outed
+```javascript
+function outed(meet, boss){
+// let meet={
+//   'tim':0,
+//   'jim':2,
+//   'randy':0,
+//   'sandy':7,
+//   'andy':0,
+//   'katie':5,
+//   'laura':1,
+//   'saajid':2,
+//   'alex':3,
+//   'john':2,
+//   'mr':0
+// };
+//let boss='jim';
+let bossScore=0;
+for (let key in meet){
+  if (key==boss) bossScore=meet[key];
+};
+//console.log(bossScore);
+
+let arr=[];
+arr=Object.keys(meet); //array with attendies to get the number of attendies
+//console.log(arr);
+let n=arr.length; //number of attendees
+
+let arr2=[];
+for (let key in meet){
+arr2.push(meet[key])
+};
+
+let score=arr2.reduce((acc,cur)=>acc+cur, bossScore)
+//console.log(score);
+//console.log(arr2);
+let meetScore=score/n;
+
+return meetScore<=5?  'Get Out Now!' : 'Nice Work Champ!';
+}
+```
+
+4. How many days are we represented in a foreign country?
+```javascript
+function daysRepresented(trips){
+  const days = [];
+  for (i = 0; i < trips.length; i++) {
+    for (j = trips[i][0]; j <= trips[i][1]; j++) {
+      if (!days.includes(j)) days.push(j);
+    }
+  }
+  return days.length;
+}
+```
+
+5.  Permute a Palindrome
+```javascript
+function permuteAPalindrome(input) {
+  let count = 0;
+  const dict = input.split``.reduce(
+    (a, b) => ((a[b] = a[b] ? a[b] + 1 : 1), a),
+    {}
+  );
+  for (let i in dict) {
+    if (dict[i] % 2 !== 0) {
+      count++;
+    }
+    if (count === 2) return false;
+  }
+  return true;
+}
+```
+
