@@ -1,16 +1,18 @@
-# solvedTasks
-# My wi-fi doesn't allow me to download the Git for 3-4 time. I will update repository from gitHub.
-# JS Practise: Section 2.2 (solved around 8 CW tasks).
-# 11-Dec-2019. JS Practise. Reached 2-3 + LEcture with Vladimir.
-# 12-Dec-2019. Java Class with Sergey. JSP. Installed and set up Git
+## Codewar Katas
+##### Solved katas from https://codewars.com
 
-Convert a String to a Number!
+* My wi-fi doesn't allow me to download the Git for 3-4 time. I will update repository from gitHub.
+* JS Practise: Section 2.2 (solved around 8 CW tasks).
+* 11-Dec-2019. JS Practise. Reached 2-3 + LEcture with Vladimir.
+* 12-Dec-2019. Java Class with Sergey. JSP. Installed and set up Git
+
+1. Convert a String to a Number!
 ```javascript
 let stringToNumber = function(str){
   return Number(str);
 }
 ```
-Sum The Strings
+2. Sum The Strings
 ```javascript
 function sumStr(a,b) {
   a=+a;
@@ -18,7 +20,7 @@ function sumStr(a,b) {
   return String(a+b);
 }
 ```
-Century From Year (codewars)
+3. Century From Year 
 ```javascript
 function century(year) {
   let div=year/100;
@@ -31,13 +33,13 @@ function century(year) {
     }
     }
 ```
-Count Odd numbers below n
+4. Count Odd numbers below n
 ```javascript
 function oddCount(n) {
      return Math.floor(n/2);
 }
 ```
-Return the closest number multiple of 10
+5. Return the closest number multiple of 10
 ```javascript
 const closestMultiple10 = num => {
 if (num<10) {
@@ -47,25 +49,25 @@ return Math.round(num/10)*10;
 }
 }
 ```
-Area of a Square
+6. Area of a Square
 ```javascript
 function squareArea(A){
   return +Math.pow((4*A)/(2*Math.PI),2).toFixed(2);
 }
 ```
-Formatting decimal places #0
+7. Formatting decimal places #0
 ```javascript
 function twoDecimalPlaces(n) {
   return +n.toFixed(2);
 }
 ```
-Discover The Original Price
+8. Discover The Original Price
 ```javascript
 function discoverOriginalPrice(discountedPrice, salePercentage){
   return +((discountedPrice*100)/(100-salePercentage)).toFixed(2);
 }
 ```
-Simple Comparison?
+9. Simple Comparison?
 ```javascript
 function add(a, b){
 	if (a==b) {
@@ -75,7 +77,7 @@ function add(a, b){
   };
 }
 ```
-Is he gonna survive?
+10. Is he gonna survive?
 ```javascript
 function hero(bullets, dragons){
 if (bullets/2>=dragons) {
@@ -85,7 +87,7 @@ return false
 };
 }
 ```
-Keep the hoop
+11. Keep the hoop
 ```javascript
 function hoopCount (n) {
    if (n>=10) {
@@ -95,7 +97,7 @@ function hoopCount (n) {
    }
 }
 ```
-Even or Odd
+12. Even or Odd
 ```javascript
 function even_or_odd(number) {
  if (number%2) {
@@ -105,7 +107,7 @@ function even_or_odd(number) {
  };
  }
 ```
-What's the real floor?
+13. What's the real floor?
 ```javascript
 function getRealFloor(n) {
 if (n==0) {
@@ -121,7 +123,7 @@ return n-1
 } 
 }
 ```
-Calculate BMI
+14. Calculate BMI
 ```javascript
 function bmi(weight, height) {
 let t=weight/(Math.pow(height,2));
@@ -136,7 +138,7 @@ return "Overweight";
   }
 }
 ```
-Determine offspring sex based on genes XX and XY chromosomes
+15. Determine offspring sex based on genes XX and XY chromosomes
 ```javascript
 function chromosomeCheck(sperm) {
   if (sperm.includes('XX')==true) {
@@ -146,7 +148,7 @@ function chromosomeCheck(sperm) {
   }
 }
 ```
-Alan Partridge II - Apple Turnover
+16. Alan Partridge II - Apple Turnover
 ```javascript
 function apple(x){
 if (Math.pow(+x,2)>1000) {
@@ -157,7 +159,7 @@ return 'Help yourself to a honeycomb Yorkie for the glovebox.'
 }
 ```
 
-Simple multiplication
+17. Simple multiplication
 ```javascript
 function simpleMultiplication(number) {
    if (number%2) {
@@ -168,7 +170,7 @@ function simpleMultiplication(number) {
 }
 ```
 
-Calculate Two People's Individual Ages
+18. Calculate Two People's Individual Ages
 ```javascript
 function getAges(sum,difference){
 let x=difference+(sum-difference)/2;
@@ -183,7 +185,7 @@ return [difference+(sum-difference)/2, (sum-difference)/2]
 }
 ```
 
-Sleigh Authentication
+19. Sleigh Authentication
 ```javascript
 function Sleigh() {}
 
@@ -195,8 +197,7 @@ Sleigh.prototype.authenticate = function(name, password) {
   }
 }
 ```
-
-Is n divisible by x and y?
+20. Is n divisible by x and y?
 ```javascript
 function isDivisible(n, x, y) {
 if (n%x===0 && n%y===0){
