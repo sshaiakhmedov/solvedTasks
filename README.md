@@ -2186,7 +2186,7 @@ function multipleOfIndex (array) {
 questions.forEach(el => el.usersAnswer = null);
 ```
 
-#10-Jan=2020
+#### 10-Jan=2020
 
 1. Numbers to Objects
 ```javascript
@@ -2220,7 +2220,7 @@ function countLanguages (list){
 }
 ```
 
-# 1-Jan-2020
+##### 11-Jan-2020
 
 1. Most valuable character
 ```javascript
@@ -2331,3 +2331,49 @@ function permuteAPalindrome(input) {
 }
 ```
 
+##### 12-Jan-2020
+
+1.  Keep Hydrated!
+```javascript
+function litres(time) {
+  if (time%2==0) {
+  return drink=time*0.5}
+  else {return drink=Math.floor(time*0.5)
+}
+```
+
+2. ilter out the geese
+```javascript
+function gooseFilter (birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+return birds.filter(el=>!geese.includes(el))
+};
+```
+
+3. Will there be enough space?
+```javascript
+function enough(cap, on, wait) {
+  return cap-on>=wait? 0 : wait-cap+on;
+}
+```
+
+4. Flatten and sort an array
+```javascript
+"use strict";
+
+function flattenAndSort(array) {
+ 
+let arr2=[];
+array.map(el=>el.map(el2=>arr2.push(el2)));
+return arr2.sort((a,b)=>a-b);
+}
+```
+
+5. Is the string uppercase?
+```javascript
+String.prototype.isUpperCase = function () {
+return  this.toUpperCase()===this.toString();
+}
+```
+
+6. 
