@@ -2376,4 +2376,33 @@ return  this.toUpperCase()===this.toString();
 }
 ```
 
-6. 
+#### 13-Jan=2020
+
+1. Will you make it?
+```javascript
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return fuelLeft*mpg>=distanceToPump? true : false;
+};
+```
+
+2. You Can't Code Under Pressure #1
+```javascript
+let doubleInteger=i=>i*2;
+```
+
+3. Watermelon
+```javascript
+function divide (w){
+  // 1<=w<=100
+  return w%2==0 && w>2
+}
+```
+
+4.  Grasshopper - Messi goals function
+```javascript
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+return laLigaGoals+copaDelReyGoals+championsLeagueGoals;
+}
+```
+
+5. 
