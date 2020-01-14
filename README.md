@@ -2405,4 +2405,17 @@ return laLigaGoals+copaDelReyGoals+championsLeagueGoals;
 }
 ```
 
-5. 
+5. Shortest Word
+```javascript
+function findShort(s){
+let arr=s.split(' ');
+
+let count=arr[0].length;
+for (let el in arr){
+  if (arr[el].length<count){
+    count=arr[el].length
+  }
+}
+return count
+}
+```
