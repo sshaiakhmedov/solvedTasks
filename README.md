@@ -2419,3 +2419,45 @@ for (let el in arr){
 return count
 }
 ```
+
+#### 14-Jan-2020
+
+1. Tip Calculator
+```javascript
+function calculateTip(amount, rating) {
+return rating.toLowerCase()=='Terrible'.toLowerCase()? Math.ceil(amount*0) :
+rating.toLowerCase()=='Poor'.toLowerCase()? Math.ceil(amount*0.05) :
+rating.toLowerCase()=='Good'.toLowerCase()? Math.ceil(amount*0.1) :
+rating.toLowerCase()=='Great'.toLowerCase()? Math.ceil(amount*0.15) :
+rating.toLowerCase()=='Excellent'.toLowerCase()? Math.ceil(amount*0.2) : "Rating not recognised";
+}
+```
+
+2. Grasshopper - Personalized Message
+```javascript
+function greet (name, owner) {
+return name==owner? 'Hello boss' : 'Hello guest'
+}
+```
+
+3. Grasshopper - Terminal game move function
+```javascript
+function move (position, roll) {
+return position+roll*2
+}
+```
+
+4. Grasshopper - Check for factor
+```javascript
+function checkForFactor (base, factor) {
+return base%factor==0? true : false
+}
+```
+
+5. Get Nth Even Number
+```javascript
+function nthEven(n){
+return n*2-2
+}
+```
+
