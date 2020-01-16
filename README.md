@@ -2477,4 +2477,31 @@ function howManyLightsabersDoYouOwn(name) {
 }
 ```
 
-3. 
+3.  Is there a vowel in there?
+```javascript
+function isVow(a){
+let vow=['a','e','i','o','u'];
+for (let el2 in vow){
+  for (let el in a){
+    if (vow[el2]==String.fromCharCode(a[el])){
+      a[el]=vow[el2]
+      }
+    }
+}
+return a
+}
+```
+
+4. Get the mean of an array
+```javascript
+function getAverage(marks){
+return Math.floor(marks.reduce((acc,cur)=>acc+cur)/marks.length)
+}
+```
+
+5. Palindrome Strings
+```javascript
+function isPalindrome(line) {
+  return line==line.split('').reverse().join('')
+}
+```
