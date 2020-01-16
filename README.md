@@ -2461,3 +2461,20 @@ return n*2-2
 }
 ```
 
+#### 15-Jan
+
+1. Grasshopper - Terminal game combat function
+```javascript
+function combat(health, damage) {
+return health-damage>0? health-damage : 0
+}
+```
+
+2. How many lightsabers do you own?
+```javascript
+function howManyLightsabersDoYouOwn(name) {
+  return name=="Zach"? 18 : 0
+}
+```
+
+3. 
