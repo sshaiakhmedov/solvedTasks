@@ -2552,9 +2552,16 @@ function nearestSq(n){
 }
 ```
 
-5. Remove exclamation marks
+5. Remove exclamation marks / 1st solution
 ```javascript
 function removeExclamationMarks(s) {
   return s.split('').filter(el=>el!='!').join('')
+}
+```
+
+5. Remove exclamation marks /2nd solution
+```javascript
+function removeExclamationMarks(s) {
+ return s.replace(/['!']/gi,'')
 }
 ```
