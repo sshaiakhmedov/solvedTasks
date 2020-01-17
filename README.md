@@ -2505,3 +2505,56 @@ function isPalindrome(line) {
   return line==line.split('').reverse().join('')
 }
 ```
+
+#### 16-Jan
+
+1. Return the day
+```javascript
+ function whatday(num) { 
+ let day=num;
+switch (num){
+  case 1: return "Sunday"
+  break;
+  case 2: return "Monday"
+  break
+  case 3: return "Tuesday"
+  break;
+  case 4: return "Wednesday"
+  break;
+  case 5: return "Thursday"
+  break;
+  case 6: return "Friday"
+  break;
+  case 7: return "Saturday"
+  break;
+  default: return "Wrong, please enter a number between 1 and 7";
+  }
+```
+
+2. get ascii value of character
+```javascript
+function getASCII(c){
+  return c.charCodeAt()
+}
+```
+
+3. All Star Code Challenge #18
+```javascript
+function strCount(str, letter){  
+ return str.split('').filter(el=>el==letter).length
+}
+```
+
+4. Find Nearest square number
+```javascript
+function nearestSq(n){
+    return Math.round(Math.pow(n,1/2))**2
+}
+```
+
+5. Remove exclamation marks
+```javascript
+function removeExclamationMarks(s) {
+  return s.split('').filter(el=>el!='!').join('')
+}
+```
