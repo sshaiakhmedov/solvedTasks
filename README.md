@@ -2582,4 +2582,24 @@ return num_pill==1? 0 :(num_pill-2)*width+(num_pill-1)*dist*100
 }
 ```
 
-3. 
+3. The Feast of Many Beasts
+```javascript
+function feast(beast, dish) {
+return beast.endsWith(dish[dish.length-1]) && beast.startsWith(dish[0])
+}
+```
+
+4. Basic variable assignment
+```javascript
+var a = "code";
+var b ="wa.rs";
+var name = a + b;
+```
+
+5. Transportation on vacation
+```javascript
+function rentalCarCost(d) {
+return d>=7? 40*d-50 :
+(d>=3 && d<7)? d*40-20 : d*40
+}
+```
