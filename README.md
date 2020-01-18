@@ -2565,3 +2565,21 @@ function removeExclamationMarks(s) {
  return s.replace(/['!']/gi,'')
 }
 ```
+
+#### 17-Jan
+
+1. Twice as old
+```javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return sonYearsOld*2>dadYearsOld? sonYearsOld*2-dadYearsOld : dadYearsOld-2*sonYearsOld
+}
+```
+
+2. Pillars
+```javascript
+function pillars(num_pill, dist, width) {
+return num_pill==1? 0 :(num_pill-2)*width+(num_pill-1)*dist*100
+}
+```
+
+3. 
