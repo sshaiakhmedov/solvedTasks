@@ -2604,3 +2604,48 @@ return d>=7? 40*d-50 :
 }
 ```
 
+#### 12-Feb-2020
+
+1. Holiday VI - Shark Pontoon
+```javascript
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+return (!!dolphin && sharkDistance/(sharkSpeed/2)-pontoonDistance/youSpeed>0)? "Alive!":
+sharkDistance/sharkSpeed-pontoonDistance/youSpeed>0?"Alive!" : "Shark Bait!";
+}
+```
+
+2. Beginner Series #2 Clock
+```javascript
+function past(h, m, s){
+//1min=60000mls
+//1 sec=1000mls
+//1hr=3600000
+return h*3600000+m*60000+s*1000;
+}
+```
+
+3. Beginner Series #1 School Paperwork
+```javascript
+function paperwork(n, m) {
+  return (n<0 || m<0)? 0 : n*m;
+}
+```
+
+4.  noobCode 01: SUPERSIZE ME.... or rather, this integer!
+```javascript
+function superSize(num){
+  let maxNum=1*(""+num).split('').sort((a,b)=>b-a).join('');
+return maxNum>num? maxNum : num;
+}
+```
+
+5. Grasshopper - Grade book
+```javascript
+function getGrade (s1, s2, s3) {
+let score=(s1+s2+s3)/3;
+return  (score>=90 && score <=100)? 'A' :
+(score>=80 && score <=89)? 'B':
+(score>=70 && score <=79)? 'C':
+(score>=60 && score <=69)? 'D':'F';
+ }
+```
