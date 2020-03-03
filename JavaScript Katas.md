@@ -2657,4 +2657,14 @@ var Person = {
 };
 ```
 
-2.
+#### 03-Mar-2020
+
+1. Compare within margin
+```javascript
+function closeCompare(a, b, margin){
+  return margin>=Math.abs(a-b) || a-b==0 ? 0:
+  a<=b? -1: 1;
+}
+```
+
+2. 
