@@ -1,10 +1,5 @@
-## Codewar Katas
-##### Solved katas from https://codewars.com
-
-* My wi-fi doesn't allow me to download the Git for 3-4 time. I will update repository from gitHub.
-* JS Practise: Section 2.2 (solved around 8 CW tasks).
-* 11-Dec-2019. JS Practise. Reached 2-3 + LEcture with Vladimir.
-* 12-Dec-2019. Java Class with Sergey. JSP. Installed and set up Git
+## Codewars
+##### JavaScript Katas from https://codewars.com
 
 1. Convert a String to a Number!
 ```javascript
@@ -2649,3 +2644,17 @@ return  (score>=90 && score <=100)? 'A' :
 (score>=60 && score <=69)? 'D':'F';
  }
 ```
+
+#### 02-Mar-2020
+
+1. What's wrong with these identifiers?
+```javascript
+var Person = {
+"1stname": "John",
+"second-name": "Doe",
+"email@ddress": "john.doe@email.com",
+"male.female": "M"
+};
+```
+
+2.
