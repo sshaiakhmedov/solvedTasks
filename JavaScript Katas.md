@@ -2667,4 +2667,12 @@ function closeCompare(a, b, margin){
 }
 ```
 
-2. 
+#### 04-Mar-2020
+
+1. Area or Perimeter
+```javascript
+const areaOrPerimeter = function(l , w) {
+  return l==w? l*w : (l+w)*2
+};
+```
+
