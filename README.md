@@ -3,4 +3,4 @@
 * JavaScript Katas
 * Java Katas
 
-| Java | JavaScript |
+
