@@ -321,10 +321,6 @@ function basicOp(operation, value1, value2)
 }
 ```
 
-
-
-
-
 Be Concise I - The Ternary Operator
 ```javascript
 // TODO: Refactor and shorten the function
