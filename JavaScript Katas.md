@@ -203,7 +203,7 @@ return false
 }
 ```
 
-Is this a triangle?
+21. Is this a triangle?
 ```javascript
 function isTriangle(a,b,c){
    if (a>0 && b>0 && c>0 && a<(b+c) && a>Math.abs(b-c)) {
@@ -213,7 +213,7 @@ function isTriangle(a,b,c){
    }
 }
 ```
-Rock Paper Scissors!
+22. Rock Paper Scissors!
 
 ```javascript
 const rps = (p1, p2) => {
@@ -235,7 +235,7 @@ return 'Draw!'
 }
 ```
 
-L1: Set Alarm
+23. L1: Set Alarm
 ```javascript
 function setAlarm(employed, vacation){
 if (employed && vacation){
@@ -250,8 +250,7 @@ return false
 }
 ```
 
-Student's Final Grade
-
+24. Student's Final Grade
 ```javascript
 function finalGrade (exam, projects) {
  if (exam>90 || projects>10) {
@@ -265,7 +264,8 @@ function finalGrade (exam, projects) {
  }
 }
 ```
-Be Concise I - The Ternary Operator
+
+25. Be Concise I - The Ternary Operator
 ```javascript
 // TODO: Refactor and shorten the function
 function describeAge(a){
@@ -275,7 +275,8 @@ return m=a<13?d+'kid':
 (a>17 &&a<65)?d+'adult':d+'elderly';
 }
 ```
-101 Dalmatians - squash the bugs, not the dogs!
+
+26. 101 Dalmatians - squash the bugs, not the dogs!
 ```javascript
 function howManyDalmatians(number){
   let dogs=["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
@@ -286,7 +287,7 @@ return respond;
 }
 ```
 
-Do I get a bonus?
+27. Do I get a bonus?
 ```javascript
 function bonusTime(salary, bonus) {
 let newSalary;
@@ -295,7 +296,7 @@ return "\u00A3"+newSalary
 }
 ```
 
-Training JS #7: if..else and ternary operator
+28. Training JS #7: if..else and ternary operator
 ```javascript
 function saleHotdogs(n){
 
@@ -304,7 +305,7 @@ function saleHotdogs(n){
 }
 ```
 
-Basic Mathematical Operations
+29. Basic Mathematical Operations
 ```javascript
 function basicOp(operation, value1, value2)
 {
@@ -321,7 +322,7 @@ function basicOp(operation, value1, value2)
 }
 ```
 
-Be Concise I - The Ternary Operator
+30. Be Concise I - The Ternary Operator
 ```javascript
 // TODO: Refactor and shorten the function
 function describeAge(a){
@@ -332,7 +333,7 @@ return m=a<13?d+'kid':
 }
 ```
 
-101 Dalmatians - squash the bugs, not the dogs!
+31. 101 Dalmatians - squash the bugs, not the dogs!
 ```javascript
 function howManyDalmatians(number) {
   
@@ -344,8 +345,8 @@ function howManyDalmatians(number) {
   
   }
 ```
-Do I get a bonus?
 
+32. Do I get a bonus?
 ```javascript
 
 function bonusTime(salary, bonus) {
@@ -355,7 +356,7 @@ return "\u00A3"+newSalary
 }
 ```
 
-Switch it Up!
+33. witch it Up!
 ```javascript
 function switchItUp(number){
 
@@ -384,7 +385,7 @@ break;
 }
 ```
 
-simple calculator
+34. Simple calculator
 ```javascript
 function calculator(a,b,sign){
 
@@ -401,7 +402,7 @@ default: return "unknown value";
 }
 }
 ```
-power of two
+35. Power of two
 ```javascript
 function isPowerOfTwo(n){
 if (n===1) return true;
@@ -416,7 +417,7 @@ return false;
 }
 ```
 
-Difference Of Squares
+36. Difference Of Squares
 ```javascript
 function differenceOfSquares(n){
 let sum1=0;
@@ -431,7 +432,7 @@ let sum2=0;
 }
 ```
 
-No zeros for heros
+37. No zeros for heros
 ```javascript
 function noBoringZeros(n) {
  if (n==0) {
@@ -444,7 +445,7 @@ return n;
 }
 ```
 
-Factorial
+38. Factorial
 ```javascript
 function factorial(n){
  let f=1;
@@ -456,7 +457,7 @@ return f;
 }
 ```
 
-Power of 3
+39. Power of 3
 ```javascript
 function largestPower(n){
 let k=0;
@@ -467,7 +468,7 @@ k++;
 }
 ```
 
-The wheat/rice and chessboard problem
+40. The wheat/rice and chessboard problem
 ```javascript
 function squaresNeeded(grains){
   let square=0;
